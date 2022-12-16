@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+.display_column, .content, body {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  height: 100vh;
+  justify-content: flex-start;
+}
+
+.body_index {
+  background-image: url(../media/backg_home.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+.logo a {
+  width: 50%;
+}
+.logo a img {
+  width: 100%;
+}
+
+.buttons, .content button {
+  width: 80%;
+  margin: 10px;
+  background-color: #D63501;
+  border-radius: 20px;
+  border-color: #D63501;
+  padding: 15px;
+}
+.buttons a, .content button a {
+  color: white;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+}
+
+.content {
+  justify-content: center;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+}
+.content h1 {
+  text-align: center;
+  margin-top: 0%;
+}
+.content p, .content li {
+  padding: 0px 10px;
+  text-align: justify;
+  text-decoration: solid;
+}
+
+/*# sourceMappingURL=style.css.map */

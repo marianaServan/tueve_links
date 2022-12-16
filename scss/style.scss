@@ -1,0 +1,64 @@
+@use 'variables';
+
+.display_column {
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    @extend .display_column;
+    height: 100vh;
+    justify-content: flex-start;
+} 
+
+.body_index {
+    background-image: url(../media/backg_home.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    a {
+        width: 50%;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.buttons{
+    width: 80%;
+        margin: 10px;
+        background-color: variables.$base_color;
+        border-radius: 20px;
+        border-color: variables.$base_color;
+        padding: 15px;
+        a {
+            color: white;
+            text-decoration: none;
+            font-family: variables.$base_typ;
+            font-size: 20px;
+        }
+}
+
+.content{
+    @extend .display_column;
+    justify-content: center;
+    align-items: center;
+    font-family: variables.$base_typ;
+    button {
+        @extend .buttons
+    }
+    h1 {
+        text-align: center;
+        margin-top: 0%;
+    }
+    p,li{
+        padding: 0px 10px;
+        text-align: justify;
+        text-decoration: solid;
+    }
+}
+
