@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
-.display_column, .description div, .content, body {
+.display_column, .description div, .content, html, body {
   display: flex;
   flex-direction: column;
 }
 
-body {
-  height: 100vh;
+html, body {
+  height: 100%;
   justify-content: flex-start;
 }
 
@@ -27,21 +27,18 @@ body {
   width: 100%;
 }
 
-.font, .content, .buttons a, .content button a {
+.font, .content a button, .content {
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
   font-weight: bold;
 }
 
-.buttons, .content button {
-  width: 80%;
-  margin: 10px;
+.buttons, .content a button {
+  width: 100%;
   background-color: #D63501;
   border-radius: 20px;
   border-color: #D63501;
   padding: 15px;
-}
-.buttons a, .content button a {
   color: white;
   text-decoration: none;
 }
@@ -54,15 +51,19 @@ body {
 .content {
   justify-content: center;
   align-items: center;
-  padding: 0px 25px;
+  padding: 0px 25px 40px 25px;
   margin-bottom: 40px;
+}
+.content a {
+  width: 80%;
+  margin: 10px;
 }
 .content h1 {
   text-align: center;
   margin-top: 0%;
 }
 .content p {
-  text-align: justify;
+  text-align: center;
   text-decoration: solid;
 }
 
@@ -72,6 +73,10 @@ body {
 .description div {
   align-items: center;
   margin: 10px 0px;
+}
+
+.button_final {
+  padding-bottom: 40px;
 }
 
 /*# sourceMappingURL=style.css.map */
