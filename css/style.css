@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
-.display_column, .content, body {
+.display_column, .description div, .content, body {
   display: flex;
   flex-direction: column;
 }
@@ -11,7 +11,8 @@ body {
 
 .body_index {
   background-image: url(../media/backg_home.png);
-  background-size: cover;
+  background-size: 140%;
+  background-position: bottom left;
   background-repeat: no-repeat;
 }
 
@@ -26,6 +27,12 @@ body {
   width: 100%;
 }
 
+.font, .content, .buttons a, .content button a {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
 .buttons, .content button {
   width: 80%;
   margin: 10px;
@@ -37,23 +44,34 @@ body {
 .buttons a, .content button a {
   color: white;
   text-decoration: none;
-  font-family: "Open Sans", sans-serif;
-  font-size: 20px;
+}
+
+.icon {
+  font-size: 50px;
+  color: #D63501;
 }
 
 .content {
   justify-content: center;
   align-items: center;
-  font-family: "Open Sans", sans-serif;
+  padding: 0px 25px;
+  margin-bottom: 40px;
 }
 .content h1 {
   text-align: center;
   margin-top: 0%;
 }
-.content p, .content li {
-  padding: 0px 10px;
+.content p {
   text-align: justify;
   text-decoration: solid;
+}
+
+.description {
+  margin: 10px 0px;
+}
+.description div {
+  align-items: center;
+  margin: 10px 0px;
 }
 
 /*# sourceMappingURL=style.css.map */

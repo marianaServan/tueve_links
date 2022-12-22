@@ -13,7 +13,8 @@ body {
 
 .body_index {
     background-image: url(../media/backg_home.png);
-    background-size: cover;
+    background-size: 140%;
+    background-position: bottom left;
     background-repeat: no-repeat;
 }
 
@@ -28,7 +29,13 @@ body {
     }
 }
 
-.buttons{
+.font {
+    font-family: variables.$base_font;
+    font-size: variables.$base_size;
+    font-weight: bold;     
+}
+
+.buttons {
     width: 80%;
         margin: 10px;
         background-color: variables.$base_color;
@@ -38,16 +45,22 @@ body {
         a {
             color: white;
             text-decoration: none;
-            font-family: variables.$base_typ;
-            font-size: 20px;
+            @extend .font;
         }
 }
 
-.content{
+.icon {
+    font-size: 50px;
+    color: variables.$base_color;
+}
+
+.content {
     @extend .display_column;
+    @extend .font;
     justify-content: center;
     align-items: center;
-    font-family: variables.$base_typ;
+    padding: 0px 25px;
+    margin-bottom: 40px;
     button {
         @extend .buttons
     }
@@ -55,10 +68,19 @@ body {
         text-align: center;
         margin-top: 0%;
     }
-    p,li{
-        padding: 0px 10px;
+    p{
         text-align: justify;
-        text-decoration: solid;
+        text-decoration: solid;   
+    }
+}
+
+.description {
+    margin: 10px 0px;
+    div {
+        @extend .display_column;
+        align-items: center;
+        margin: 10px 0px;
+
     }
 }
 
